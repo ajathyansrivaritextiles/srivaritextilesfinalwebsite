@@ -1,0 +1,13 @@
+# robots.txt — Ajathyan Sri Vari Textiles
+# Website: https://ajathyantextiles.pages.dev
+# Last Updated: 2026-06-28
+
+User-agent: *
+Allow: /
+
+# Block access to admin or draft folders (add if applicable)
+# Disallow: /admin/
+# Disallow: /drafts/
+
+# Sitemap location
+Sitemap: https://ajathyantextiles.pages.dev/sitemap.xml

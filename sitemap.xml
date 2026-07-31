@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/index.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/about.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sarees Collection -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/collections/sarees.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Ladies Wear -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/collections/ladies-wear.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Girls Wear -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/collections/girls-wear.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Men's Wear -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/collections/mens-wear.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Boys Wear -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/collections/boys-wear.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/gallery.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Reviews -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/reviews.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/contact.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/privacy-policy.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms & Conditions -->
+  <url>
+    <loc>https://ajathyantextiles.pages.dev/terms.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
