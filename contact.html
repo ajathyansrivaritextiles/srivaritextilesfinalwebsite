@@ -471,9 +471,6 @@
 
 /* ── CONTACT DETAIL CARD ── */
 .contact-detail-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   padding: 44px 28px;
   background: #ffffff;
@@ -482,11 +479,11 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease,
               border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.contact-detail-card .btn {
-  margin-top: auto;
-  align-self: center;
-}
+.contact-detail-card > .btn { margin-top: auto; }
 .contact-detail-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 32px rgba(122,31,43,0.12);
@@ -504,9 +501,7 @@
   font-weight: 600;
   margin-bottom: 12px;
 }
-.contact-detail-card h4 { width: 100%; }
 .cdc-address {
-  width: 100%;
   font-style: normal;
   font-size: 0.9rem;
   color: #555;
@@ -514,13 +509,12 @@
   margin-bottom: 20px;
 }
 .cdc-desc {
-  width: 100%;
   font-size: 0.88rem;
   color: #666;
   line-height: 1.7;
   margin-bottom: 12px;
 }
-.cdc-num { width: 100%; margin-bottom: 20px; }
+.cdc-num { margin-bottom: 20px; }
 .cdc-num a {
   font-size: 1.05rem;
   font-weight: 600;
@@ -530,7 +524,6 @@
 }
 .cdc-num a:hover { color: #D4AF37; }
 .cdc-row {
-  width: 100%;
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -1257,10 +1250,11 @@
       </a>
       
       <a href="tel:+919043864752"
-        class="btn btn-call transition-all duration-300
-               hover:scale-105 hover:shadow-lg"
+        class="btn-call transition-all duration-300"
         aria-label="Call us now">
-        <span class="btn-call-icon" aria-hidden="true">📞</span>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c0.3-0.3 0.7-0.4 1-0.2 1.1 0.4 2.3 0.6 3.5 0.6 0.6 0 1 0.4 1 1v3.5c0 0.6-0.4 1-1 1C10.6 21.1 2.9 13.4 2.9 3.9c0-0.6 0.4-1 1-1H7.4c0.6 0 1 0.4 1 1 0 1.2 0.2 2.4 0.6 3.5 0.1 0.3 0.1 0.7-0.2 1L6.6 10.8z" stroke="#1a3a2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         Call Now
       </a>
     </div>
@@ -1343,7 +1337,7 @@
   </div>
 
   <div class="footer-bottom">
-    <span>© 2024 Ajathyan Sri Vari Textiles. All rights reserved.</span>
+    <span>© 2021–2026 Ajathyan Sri Vari Textiles. All rights reserved.</span>
     <div class="footer-links">
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms.html">Terms &amp; Conditions</a>
@@ -1422,29 +1416,43 @@
   background: transparent;
 }
 .btn-outline-white:hover { background: #ffffff; color: #7A1F2B; }
+
 .btn-call {
-  background: linear-gradient(135deg, #25d366 0%, #25d366 100%);
-  color: #2d0a0f;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 18px rgba(212,175,55,0.45);
-  animation: callPulse 2.4s ease-in-out infinite;
-}
-.btn-call-icon {
-  display: inline-flex;
-  font-size: 1.05em;
-  transform: rotate(-8deg);
+  gap: 10px;
+  padding: 13px 30px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a3a2e;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6EE7A8 0%, #34D399 50%, #10B981 100%);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 .btn-call:hover {
-  background: linear-gradient(135deg, #e8c34a 0%, #D4AF37 100%);
-  box-shadow: 0 8px 26px rgba(212,175,55,0.6);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 26px rgba(16, 185, 129, 0.5);
+  color: #1a3a2e;
 }
-@keyframes callPulse {
-  0%, 100% { box-shadow: 0 4px 18px rgba(212,175,55,0.45); }
-  50%       { box-shadow: 0 4px 26px rgba(212,175,55,0.8); }
+.btn-call:active { transform: translateY(-1px) scale(0.98); }
+.btn-call svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  animation: btnCallRing 2.2s ease-in-out infinite;
 }
-@media (prefers-reduced-motion: reduce) { .btn-call { animation: none; } }
+@keyframes btnCallRing {
+  0%, 100% { transform: rotate(0deg); }
+  4%  { transform: rotate(-18deg); }
+  8%  { transform: rotate(14deg); }
+  12% { transform: rotate(-10deg); }
+  16% { transform: rotate(6deg); }
+  20% { transform: rotate(0deg); }
+}
 /* ── BANNER ── */
 .banner-strip {
   background: #7A1F2B;
