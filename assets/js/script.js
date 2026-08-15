@@ -276,10 +276,14 @@
     });
 
     const sliderEl = document.getElementById('heroSlider');
-    if (sliderEl) {
-      sliderEl.addEventListener('mouseenter', stopAuto);
-      sliderEl.addEventListener('mouseleave', startAuto);
-    }
+    // Pause only while hovering the small nav controls, not the whole banner —
+    // pausing on the whole hero meant autoplay stopped as soon as the mouse
+    // rested anywhere near the top of the page.
+    [prevBtn, nextBtn, ...dots].forEach(el => {
+      if (!el) return;
+      el.addEventListener('mouseenter', stopAuto);
+      el.addEventListener('mouseleave', startAuto);
+    });
 
     // Touch swipe support
     let touchStartX = 0;
