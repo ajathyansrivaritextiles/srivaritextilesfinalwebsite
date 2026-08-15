@@ -12,9 +12,9 @@
   <meta property="og:site_name" content="Ajathyan Sri Vari Textiles">
   <meta property="og:locale" content="en_IN">
   <meta property="og:image" content="assets/images/og-cover.jpg">
-  <meta property="og:url" content="https://ajathyantextiles.pages.dev/gallery.html">
-  <link rel="canonical" href="https://ajathyantextiles.pages.dev/gallery.html">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Ajathyan Sri Vari Textiles","url":"https://ajathyantextiles.pages.dev","telephone":"+919043864752","email":"ajathyanknr@gmail.com","address":{"@type":"PostalAddress","streetAddress":"190, A.R. Road","addressLocality":"Koothanallur","addressRegion":"Tamil Nadu","postalCode":"614101","addressCountry":"IN"}}</script>
+  <meta property="og:url" content="https://ajathyansrivaritextiles.com/gallery.html">
+  <link rel="canonical" href="https://ajathyansrivaritextiles.com/gallery.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Ajathyan Sri Vari Textiles","url":"https://ajathyansrivaritextiles.com","telephone":"+919043864752","email":"ajathyanknr@gmail.com","address":{"@type":"PostalAddress","streetAddress":"190, A.R. Road","addressLocality":"Koothanallur","addressRegion":"Tamil Nadu","postalCode":"614101","addressCountry":"IN"}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -228,8 +228,8 @@
         role="listitem"
         data-aos="zoom-in" data-aos-delay="160"
         tabindex="0"
-        aria-label="First floor overview — ladies wear floor" data-src="assets/images/gallery/first-floor-overview.webp">
-        <img class="gal-img" src="assets/images/gallery/first-floor-overview.webp" alt="First floor overview — ladies wear floor" loading="lazy">
+        aria-label="First floor overview — sarees floor" data-src="assets/images/gallery/first-floor-overview.webp">
+        <img class="gal-img" src="assets/images/gallery/first-floor-overview.webp" alt="First floor overview — sarees floor" loading="lazy">
         <div class="gal-overlay" aria-hidden="true">
           <span>🔍 View</span>
         </div>
@@ -262,8 +262,8 @@
         role="listitem"
         data-aos="zoom-in" data-aos-delay="160"
         tabindex="0"
-        aria-label="Second floor overview — men's and boys wear" data-src="assets/images/gallery/second-floor-overview.webp">
-        <img class="gal-img" src="assets/images/gallery/second-floor-overview.webp" alt="Second floor overview — men's shirts section" loading="lazy">
+        aria-label="Second floor overview — ladies and girls wear" data-src="assets/images/gallery/second-floor-overview.webp">
+        <img class="gal-img" src="assets/images/gallery/second-floor-overview.webp" alt="Second floor overview — ladies and girls wear section" loading="lazy">
         <div class="gal-overlay" aria-hidden="true">
           <span>🔍 View</span>
         </div>
@@ -564,10 +564,10 @@ document.addEventListener('keydown', function(e) {
   <div class="container">
 
     <div class="section-heading" data-aos="fade-up">
-      <h2>Three Floors — One Complete Store</h2>
+      <h2>Four Floors — One Complete Store</h2>
       <div class="gold-line" aria-hidden="true"></div>
       <p>Our showroom at 190 A.R. Road, Koothanallur is organized
-         across three dedicated floors — each one a complete category
+         across four dedicated floors — each one a complete category
          experience.</p>
     </div>
 
@@ -578,7 +578,18 @@ document.addEventListener('keydown', function(e) {
                hover:scale-105 hover:shadow-lg"
         data-aos="fade-right"
         data-aos-delay="0">
-        <div class="floor-num" aria-label="First Floor">I</div>
+        <div class="floor-num" aria-label="Ground Floor">G</div>
+        <h4>Ground Floor</h4>
+        <p>Burka &amp; shawls, ladies bags and our cash counter —
+           your first stop when you walk in.</p>
+      </div>
+
+      <div
+        class="floor-card transition-all duration-300
+               hover:scale-105 hover:shadow-lg"
+        data-aos="fade-right"
+        data-aos-delay="80">
+        <div class="floor-num" aria-label="First Floor">1</div>
         <h4>First Floor</h4>
         <p>Sarees — our largest and most visited section. Silk,
            Kanjivaram, bridal, printed cotton and embroidered sarees
@@ -595,7 +606,7 @@ document.addEventListener('keydown', function(e) {
         class="floor-card floor-card--featured
                transition-all duration-300 hover:scale-105 hover:shadow-lg"
         data-aos="fade-up"
-        data-aos-delay="120">
+        data-aos-delay="160">
         <div class="floor-num" aria-label="Second Floor">2</div>
         <h4>Second Floor</h4>
         <p>Ladies Wear &amp; Girls Wear — kurtis, chudidars, tops,
@@ -635,8 +646,11 @@ document.addEventListener('keydown', function(e) {
 /* ── FLOOR GUIDE ── */
 .floor-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+}
+@media (max-width: 1100px) {
+  .floor-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 900px) {
   .floor-grid { grid-template-columns: 1fr; gap: 20px; }
@@ -994,10 +1008,11 @@ document.addEventListener('keydown', function(e) {
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a" id="glfaq-2" role="region">
-          <p>Three dedicated floors. Ground floor: Sarees. First
-             floor: Ladies Wear and Girls Wear. Second floor: Men's
-             Wear and Boys Wear. Each floor is organized by category
-             for comfortable, easy browsing.</p>
+          <p>Four dedicated floors. Ground floor: Burka &amp; Shawls,
+             Ladies Bags and our Cash Counter. First floor: Sarees.
+             Second floor: Ladies Wear and Girls Wear. Third floor:
+             Men's Wear and Boys Wear. Each floor is organized by
+             category for comfortable, easy browsing.</p>
         </div>
       </div>
 
@@ -1160,7 +1175,7 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
   aria-label="Visit us in person">
   <div class="container" style="text-align:center;">
     <h2>Like What You See? Come Visit Us in Person</h2>
-    <p>The photos are just a preview — three floors of premium
+    <p>The photos are just a preview — four floors of premium
        textiles and fashion are waiting for you at 190 A.R. Road,
        Koothanallur.</p>
     <div class="cta-buttons">
@@ -1196,7 +1211,7 @@ document.querySelectorAll('.faq-q').forEach(function(btn) {
         height="72"
         loading="lazy">
       <p>Koothanallur's trusted family textile showroom since 2021 —
-         three floors of premium sarees and fashion for every generation,
+         four floors of premium sarees and fashion for every generation,
          priced for every budget.</p>
       <div class="social-links" aria-label="Follow us">
         <a href="https://www.instagram.com/sri_vari_textiles_koothanallur"
