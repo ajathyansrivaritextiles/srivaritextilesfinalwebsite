@@ -1116,7 +1116,7 @@ p:last-child { margin-bottom: 0; }
 .btn-wa:hover { background: #1da851; }
 
 /* ── WHATSAPP STRIP ── */
-.wa-strip { background: #1a5c30; padding: 48px 20px; }
+.wa-strip { background: #7A1F2B; padding: 48px 20px; }
 .wa-strip h3 {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -1124,7 +1124,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 500;
   margin-bottom: 8px;
 }
-.wa-strip p { color: #a8e6bf; margin-bottom: 24px; }
+.wa-strip p { color: #f5e6c8; margin-bottom: 24px; }
 
 /* ── FOOTER ── */
 .footer { background: #7A1F2B; color: #f5e6c8; padding: 56px 20px 0; }
@@ -1687,7 +1687,7 @@ textarea:focus-visible {
 }
 
 /* ── WHATSAPP STRIP ── */
-.wa-strip { background: #1a5c30; padding: 52px 20px; }
+.wa-strip { background: #7A1F2B; padding: 52px 20px; }
 .wa-strip h3 {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -1695,7 +1695,7 @@ textarea:focus-visible {
   font-weight: 500;
   margin-bottom: 8px;
 }
-.wa-strip p { color: #a8e6bf; margin-bottom: 24px; max-width: 560px; margin-left: auto; margin-right: auto; }
+.wa-strip p { color: #f5e6c8; margin-bottom: 24px; max-width: 560px; margin-left: auto; margin-right: auto; }
 
 /* ── REVIEWS GRID ── */
 .reviews-grid {
@@ -3149,13 +3149,6 @@ a[href*="wa.me"] {
   color: #fff !important;
   transform: translateY(-2px) scale(1.1);
   box-shadow: 0 6px 15px rgba(201, 168, 76, 0.4);
-}
-
-/* Guarantee centered text in buttons */
-.btn-wa, .btn-enq {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
 }
 
 /* Guarantee centered text in buttons */
